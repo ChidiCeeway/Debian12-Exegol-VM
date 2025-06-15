@@ -33,14 +33,15 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
 
 ## 📥 Installation
 
-1. Clone the repository:
+1. Clone the repository :
    ```bash
    git clone https://github.com/YOUR_USERNAME/exegol-debian12-vm.git
    
-## 📥 Update Exegol 
+## 📥 Update Exegol :
 
 1. Update an image
+    ```bash
+    exegol update
+    ```
+## 📥 Uses of Exegol : 
   ```bash
-  exegol update
-```
-## 📥 Uses of Exegol
