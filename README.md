@@ -83,8 +83,10 @@ exegol start <container_name> <image_name> [options]
 ```
 Example: 
 ```bash
-exegol start free full
+exegol start free
 ```
+![Example](https://github.com/user-attachments/assets/0317f251-4392-4f72-8ea7-f4419331d860)
+
 - If <container_name> is omitted, it defaults to the <image_name>
 
 - Process:
