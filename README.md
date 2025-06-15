@@ -37,11 +37,10 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
    ```bash
    git clone https://github.com/YOUR_USERNAME/exegol-debian12-vm.git
    
-## 📥 Update Exegol :
+## 🚀 Quickstart: Launching Exegol
 
-1. Update an image
-    ```bash
-    exegol update
-    ```
-## 📥 Uses of Exegol : 
-  ```bash
+From the Debian 12 VM command line (Docker, pipx, and Exegol are already installed):
+
+### 1. Update Exegol & images  
+```bash
+exegol update    # Updates the Exegol wrapper and all installed images :contentReference[oaicite:1]{index=1}
