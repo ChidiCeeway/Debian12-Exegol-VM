@@ -125,6 +125,7 @@ Run
 ```bash
 exegol start -h
 ```
+---
 
 ### ✅ Verify file integrity (optional but recommended)
 
@@ -147,5 +148,6 @@ Get-FileHash -Algorithm SHA256 .\Debian12.ova
 ```
 #### If the result matches, the file is intact.
 
+---
 ⚠️ **Security Note**: This VM is provided as-is. Ensure you review its contents before using it in sensitive environments.
 
