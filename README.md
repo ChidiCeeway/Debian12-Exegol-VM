@@ -126,13 +126,25 @@ Run
 exegol start -h
 ```
 
-#### Optional: Verify integrity
+### ✅ Verify file integrity (optional but recommended)
 
-You can check the hash after extraction:
+After extracting `Debian12.7z.001`, you will get a `.ova` file.
 
+To verify that the file was not corrupted or altered, run:
+
+#### On Linux/macOS :
 ```bash
 sha256sum Debian12.ova
 ```
+#### Windows PowerShell:
+```bash
+Get-FileHash -Algorithm SHA256 .\Debian12.ova
+```
+Expected SHA-256 hash:
+```bash
+abc
+```
+If the result matches, the file is intact.
 
 ⚠️ **Security Note**: This VM is provided as-is. Ensure you review its contents before using it in sensitive environments.
 
