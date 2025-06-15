@@ -38,6 +38,8 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
    git clone https://github.com/Jul1111/Debian12-Exegol-VM
    ```
 #### 2. Download all parts of the Debian12.7z archive from the Releases section.
+- 🔗 [GitHub Releases (split archive)](https://github.com/Jul1111/Debian12-Exegol-VM/releases)
+- 🔗 [Direct Mega Link (full `.ova` file)](https://mega.nz/file/QUBi2DgY#cDtwvbKSQudLYNnZSEe9AoS2BxdBDxUL1aqu7yTRrqg)
 #### 3. Make sure all files are in the same folder, then extract using 7-Zip or via terminal :
 
 🖥️ On Windows (with 7-Zip installed):
