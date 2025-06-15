@@ -58,3 +58,53 @@ Example: exegol start web full
   - Creates the container with the provided settings
   - Starts it and drops you into an interactive shell
 
+ Common options:
+```bash
+-w, --workspace <path>: bind host folder to /workspace
+```
+
+```bash
+-cwd: mount current directory as workspace
+```
+
+```bash
+--vpn <file.ovpn>: launch VPN at startup
+```
+
+```bash
+-V, --volume <host>:<container>: add volume mount
+```
+
+```bash
+-d, --device <dev>: add host device (e.g., /dev/ttyACM0)
+```
+
+```bash
+--disable-X11: disable GUI sharing
+```
+
+```bash
+--desktop: enable full GUI desktop via HTTP/VNC 
+```
+
+```bash
+-l, --log: enable shell logging (asciinema by default) 
+```
+
+```bash
+-e, --env KEY=VALUE: set environment variable
+```
+
+```bash
+-s, --shell <shell>: choose shell (default: zsh)
+```
+
+```bash
+--privileged/--cap: add Linux capabilities or privileged mode when needed (e.g., VPN, devices)
+```
+### For full option list :
+
+```bash
+Run exegol start -h
+```
+
