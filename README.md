@@ -35,8 +35,20 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
 
 1. Clone the repository :
    ```bash
-   git clone https://github.com/YOUR_USERNAME/exegol-debian12-vm.git
-   
+   git clone https://github.com/Jul1111/Debian12-Exegol-VM
+   ```
+2. Download all parts of the Debian12.7z archive from the Releases section.
+3. Make sure all files are in the same folder, then extract using 7-Zip or via terminal :
+
+🖥️ On Windows (with 7-Zip installed):
+     ```bash
+    7z x Debian12.7z.001
+    ```
+
+🐧 On Linux/macOS (with p7zip-full installed) :
+    ```bash
+    7z x Debian12.7z.001
+    ```
 ## 🚀 Quickstart: Launching Exegol
 
 From the Debian 12 VM command line (Docker, pipx, and Exegol are already installed):
