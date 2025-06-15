@@ -46,9 +46,10 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
     ```
 
 🐧 On Linux/macOS (with p7zip-full installed) :
-    ```
+      ```
     7z x Debian12.7z.001
     ```
+    
 4. You will get the .ova virtual machine file. You can import it into your hypervisor (e.g., VirtualBox or VMware).
 
 ## 🚀 Quickstart: Launching Exegol
