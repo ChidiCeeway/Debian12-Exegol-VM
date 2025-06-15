@@ -33,12 +33,12 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
 
 ## 📥 Installation
 
-1. Clone the repository :
+#### 1. Clone the repository :
    ```bash
    git clone https://github.com/Jul1111/Debian12-Exegol-VM
    ```
-2. Download all parts of the Debian12.7z archive from the Releases section.
-3. Make sure all files are in the same folder, then extract using 7-Zip or via terminal :
+#### 2. Download all parts of the Debian12.7z archive from the Releases section.
+#### 3. Make sure all files are in the same folder, then extract using 7-Zip or via terminal :
 
 🖥️ On Windows (with 7-Zip installed):
      ```
@@ -50,7 +50,7 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
     7z x Debian12.7z.001
     ```
     
-4. You will get the .ova virtual machine file. You can import it into your hypervisor (e.g., VirtualBox or VMware).
+#### 4. You will get the .ova virtual machine file. You can import it into your hypervisor (e.g., VirtualBox or VMware).
 
 ## 🚀 Quickstart: Launching Exegol
 
