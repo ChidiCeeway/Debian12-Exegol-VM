@@ -131,7 +131,7 @@ exegol start -h
 
 ### ✅ Verify file integrity (optional but recommended)
 
-After extracting `Debian12.7z.001`, you will get a `.ova` file.
+After extracting `Debian12.7z`, you will get a `.ova` file.
 
 To verify that the file was not corrupted or altered, run:
 
