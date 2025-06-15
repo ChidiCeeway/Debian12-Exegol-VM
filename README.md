@@ -126,3 +126,13 @@ Run
 exegol start -h
 ```
 
+#### Optional: Verify integrity
+
+You can check the hash after extraction:
+
+```bash
+sha256sum Debian12.ova
+```
+
+⚠️ **Security Note**: This VM is provided as-is. Ensure you review its contents before using it in sensitive environments.
+
