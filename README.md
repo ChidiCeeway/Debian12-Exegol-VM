@@ -119,6 +119,8 @@ exegol start free full
 ```bash
 --privileged/--cap: add Linux capabilities or privileged mode when needed (e.g., VPN, devices)
 ```
+---
+
 ### For full option list :
 
 Run 
