@@ -44,3 +44,8 @@ From the Debian 12 VM command line (Docker, pipx, and Exegol are already insta
 ### 1. Update Exegol & images  
 ```bash
 exegol update    # Updates the Exegol wrapper and all installed images :contentReference[oaicite:1]{index=1}
+```
+### 2. Start & enter a container
+```bash
+exegol start <container_name> <image_name> [options]
+
