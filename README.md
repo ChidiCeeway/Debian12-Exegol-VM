@@ -85,6 +85,7 @@ Example:
 ```bash
 exegol start default
 ```
+---
 ![Example](https://github.com/user-attachments/assets/0317f251-4392-4f72-8ea7-f4419331d860)
 
 - If <container_name> is omitted, it defaults to the <image_name>
@@ -93,7 +94,10 @@ exegol start default
   - If the image isn’t installed, Exegol prompts for installation
   - Creates the container with the provided settings
   - Starts it and drops you into an interactive shell
+    
+![Example2](https://github.com/user-attachments/assets/bd84257b-228a-41e5-abdd-f31ca76657f2)
 
+---
  Common options:
 ```bash
 -w, --workspace <path>: bind host folder to /workspace
