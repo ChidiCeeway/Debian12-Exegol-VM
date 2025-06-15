@@ -41,6 +41,4 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
 
 1 . Update an image
   ```bash
-  exegol update```
-
-## 📥 Update Exegol 
+  exegol update
