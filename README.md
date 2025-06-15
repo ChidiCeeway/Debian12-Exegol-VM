@@ -37,3 +37,10 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
    ```bash
    git clone https://github.com/YOUR_USERNAME/exegol-debian12-vm.git
    
+## 📥 Update Exegol 
+
+1 . Update an image
+  ```bash
+  exegol update```
+
+## 📥 Update Exegol 
