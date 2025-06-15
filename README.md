@@ -41,12 +41,12 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
 3. Make sure all files are in the same folder, then extract using 7-Zip or via terminal :
 
 🖥️ On Windows (with 7-Zip installed):
-     ```bash
+     ```
     7z x Debian12.7z.001
     ```
 
 🐧 On Linux/macOS (with p7zip-full installed) :
-    ```bash
+    ```
     7z x Debian12.7z.001
     ```
 ## 🚀 Quickstart: Launching Exegol
