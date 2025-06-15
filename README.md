@@ -55,9 +55,9 @@ Example: exegol start web full
 
 - Process:
 
- ## 1. If the image isn’t installed, Exegol prompts for installation
+ #### 1. If the image isn’t installed, Exegol prompts for installation
 
-##  2. Creates the container with the provided settings
+####  2. Creates the container with the provided settings
 
-##  3. Starts it and drops you into an interactive shell
+####  3. Starts it and drops you into an interactive shell
 
