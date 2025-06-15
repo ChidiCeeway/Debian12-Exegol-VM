@@ -27,7 +27,22 @@ A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol fr
 | Disk space  | ≥ 50 GB free   | —           |
 | Network     | NAT (port forwarding optional) | — |
 
-*(Add a screenshot of VirtualBox settings here)*
+Below are the VirtualBox settings used for the Debian 12 virtual machine :
+
+### 📄 General Settings
+![General Setting](https://github.com/user-attachments/assets/a6092f66-13b4-45da-94eb-4d72119fa28b)
+
+### 🧠 System (RAM, Boot Order, Chipset, etc.)
+![System Settings](https://github.com/user-attachments/assets/b17a825d-37ad-4292-9d10-6f669a7f6434)
+
+### 🖥️ Display (Video Settings)
+![Display Settings](https://github.com/user-attachments/assets/06cd7f48-d7df-4211-aba1-093bd5b23a69)
+
+### 💾 Storage
+![Storage Settings](https://github.com/user-attachments/assets/cb6ee98a-3f1d-49c8-bb51-700e2f8d82e9)
+
+### 🌐 Network
+![Network Settings](https://github.com/user-attachments/assets/4b0a8411-50c6-43c4-aa5c-41402c255b55)
 
 ---
 
