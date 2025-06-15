@@ -140,11 +140,12 @@ sha256sum Debian12.ova
 ```bash
 Get-FileHash -Algorithm SHA256 .\Debian12.ova
 ```
-Expected SHA-256 hash:
+#### Expected SHA-256 hash:
+
 ```bash
-abc
+890F4F754B0EE504AC61EE9CB886CD77B3A11F6DC2F17791F50A8EA9C1A79B39
 ```
-If the result matches, the file is intact.
+#### If the result matches, the file is intact.
 
 ⚠️ **Security Note**: This VM is provided as-is. Ensure you review its contents before using it in sensitive environments.
 
