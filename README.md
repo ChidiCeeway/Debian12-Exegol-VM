@@ -33,7 +33,7 @@ Below are the VirtualBox settings used for the Debian 12 virtual machine :
 ![General Setting](https://github.com/user-attachments/assets/a6092f66-13b4-45da-94eb-4d72119fa28b)
 
 ### 🧠 System (RAM, Boot Order, Chipset, etc.)
-![System Settings](https://github.com/user-attachments/assets/b17a825d-37ad-4292-9d10-6f669a7f6434)
+![System Settings](https://github.com/user-attachments/assets/a3b34b8f-b243-4cf1-a4de-75ad593314e0)
 
 ### 🖥️ Display (Video Settings)
 ![Display Settings](https://github.com/user-attachments/assets/06cd7f48-d7df-4211-aba1-093bd5b23a69)
