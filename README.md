@@ -48,4 +48,16 @@ exegol update    # Updates the Exegol wrapper and all installed images :contentR
 ### 2. Start & enter a container
 ```bash
 exegol start <container_name> <image_name> [options]
+```
+Example: exegol start web full
+
+- If <container_name> is omitted, it defaults to the <image_name>
+
+- Process:
+
+  1. If the image isn’t installed, Exegol prompts for installation
+
+  2. Creates the container with the provided settings
+
+  3. Starts it and drops you into an interactive shell
 
