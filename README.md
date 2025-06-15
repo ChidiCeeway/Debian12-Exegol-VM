@@ -49,8 +49,10 @@ exegol update    # Updates the Exegol wrapper and all installed images :contentR
 ```bash
 exegol start <container_name> <image_name> [options]
 ```
-Example: exegol start web full
-
+Example: 
+```bash
+exegol start free full
+```
 - If <container_name> is omitted, it defaults to the <image_name>
 
 - Process:
@@ -104,7 +106,8 @@ Example: exegol start web full
 ```
 ### For full option list :
 
+Run 
 ```bash
-Run exegol start -h
+exegol start -h
 ```
 
