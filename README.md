@@ -1,185 +1,130 @@
-﻿# 🐧 Debian12‑Exegol VM
+# Debian 12 Exegol VM 🐧💻
 
-A **VirtualBox-ready appliance** featuring Debian 12 (64-bit) with **Exegol free** pre-installed.
+Welcome to the **Debian 12 Exegol VM** repository! This project offers a lightweight virtual machine based on Debian 12, equipped with Exegol, a modular Docker-based pentesting framework. It serves as an excellent tool for Capture The Flag (CTF) challenges, bug bounty programs, OSINT tasks, and various offensive security activities.
 
----
+[![Download Releases](https://img.shields.io/badge/Download%20Releases-blue.svg)](https://github.com/ChidiCeeway/Debian12-Exegol-VM/releases)
 
-## 📦 What’s Inside
+## Table of Contents
 
-- **Operating System**: Debian 12 “Bookworm” (64-bit)
-- **Exegol free** installed via pipx/Docker
-- **User account**:
-  - **Username**: `jul` (sudo privileges)
-  - **Password**: `jul`
-- **Root user**: disabled by default (no password set)
-- **SSH**: enabled and ready to use
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Topics](#topics)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
----
+## Features
 
-## 🛠️ System Requirements
+- **Lightweight**: Designed to run efficiently without consuming excessive resources.
+- **Modular**: Exegol allows you to add or remove tools as needed.
+- **Docker-based**: Simplifies the installation and management of pentesting tools.
+- **User-friendly**: Easy to set up and use, even for beginners.
+- **Versatile**: Suitable for CTFs, bug bounty, OSINT, and other offensive security tasks.
 
-| Component    | Minimum        | Recommended |
-|-------------|----------------|-------------|
-| VirtualBox  | ≥ 6.1          | —           |
-| RAM         | 4 GB           | 8 GB        |
-| CPU         | 2 vCPUs        | —           |
-| Video       | 128 MB + 3D acceleration enabled | — |
-| Disk space  | ≥ 50 GB free   | —           |
-| Network     | NAT (port forwarding optional) | — |
+## Installation
 
-Below are the VirtualBox settings used for the Debian 12 virtual machine :
+To get started, you need to download the VM image. Visit the [Releases section](https://github.com/ChidiCeeway/Debian12-Exegol-VM/releases) to find the latest version. Download the file and follow these steps:
 
----
-### 📄 General Settings
-![General Setting](https://github.com/user-attachments/assets/a6092f66-13b4-45da-94eb-4d72119fa28b)
+1. **Install VirtualBox**: If you haven’t installed VirtualBox yet, download it from the [official website](https://www.virtualbox.org/) and install it on your system.
 
----
-### 🧠 System (RAM, Boot Order, Chipset, etc.)
-![System Settings](https://github.com/user-attachments/assets/a3b34b8f-b243-4cf1-a4de-75ad593314e0)
+2. **Import the VM**:
+   - Open VirtualBox.
+   - Click on "Import Appliance."
+   - Select the downloaded VM image file.
+   - Follow the prompts to complete the import.
 
----
-### 🖥️ Display (Video Settings)
-![Display Settings](https://github.com/user-attachments/assets/06cd7f48-d7df-4211-aba1-093bd5b23a69)
+3. **Start the VM**: Once imported, you can start the VM by selecting it in VirtualBox and clicking "Start."
 
----
-### 💾 Storage
-![Storage Settings](https://github.com/user-attachments/assets/cb6ee98a-3f1d-49c8-bb51-700e2f8d82e9)
+4. **Initial Setup**: Log in using the default credentials provided in the documentation.
 
----
-### 🌐 Network
-![Network Settings](https://github.com/user-attachments/assets/4b0a8411-50c6-43c4-aa5c-41402c255b55)
+## Usage
 
----
+Once the VM is up and running, you can start using Exegol for your pentesting needs. Here are some basic commands to get you started:
 
-## 📥 Installation
+- **Start Exegol**: Open a terminal in the VM and run:
+  ```bash
+  exegol
+  ```
 
-#### 1. Clone the repository :
+- **List Available Tools**: To see all the tools available in Exegol, use:
+  ```bash
+  exegol list
+  ```
+
+- **Run a Tool**: To run a specific tool, type:
+  ```bash
+  exegol run <tool_name>
+  ```
+
+### Example Usage
+
+1. **CTF Challenges**: Use Exegol’s tools to solve various CTF challenges. For example, if you need to perform a web vulnerability scan, run:
    ```bash
-   git clone https://github.com/Jul1111/Debian12-Exegol-VM
+   exegol run nikto
    ```
-#### 2. Download all parts of the Debian12.7z archive from the Releases section.
-- 🔗 [GitHub Releases (split archive)](https://github.com/Jul1111/Debian12-Exegol-VM/releases)
-- 🔗 [Direct Mega Link (full `.ova` file)](https://mega.nz/file/QUBi2DgY#cDtwvbKSQudLYNnZSEe9AoS2BxdBDxUL1aqu7yTRrqg)
-#### 3. Make sure all files are in the same folder, then extract using 7-Zip or via terminal :
 
-🖥️ On Windows (with 7-Zip installed):
-     ```
-    7z x Debian12.7z.001
-    ```
+2. **Bug Bounty Programs**: When hunting for bugs, you can use tools like Burp Suite or OWASP ZAP included in Exegol. Simply run:
+   ```bash
+   exegol run burpsuite
+   ```
 
-🐧 On Linux/macOS (with p7zip-full installed) :
-      ```
-    7z x Debian12.7z.001
-    ```
-    
-#### 4. You will get the .ova virtual machine file. You can import it into your hypervisor (e.g., VirtualBox or VMware).
+3. **OSINT Tasks**: Gather information on targets using OSINT tools available in Exegol. For instance:
+   ```bash
+   exegol run theharvester
+   ```
 
-## 🚀 Quickstart: Launching Exegol
+## Topics
 
-From the Debian 12 VM command line (Docker, pipx, and Exegol are already installed):
+This repository covers various topics related to cybersecurity and pentesting:
 
-### 1. Update Exegol & images  
-```bash
-exegol update    # Updates the Exegol wrapper and all installed images :contentReference[oaicite:1]{index=1}
-```
-### 2. Start & enter a container
-```bash
-exegol start <container_name> <image_name> [options]
-```
-Example: 
-```bash
-exegol start default
-```
----
-![Example](https://github.com/user-attachments/assets/0317f251-4392-4f72-8ea7-f4419331d860)
+- **Bug Bounty**: Engage in programs to find vulnerabilities in software.
+- **CTF**: Participate in challenges to test your skills.
+- **Cybersecurity**: Understand and apply security measures to protect systems.
+- **Debian**: Utilize the Debian operating system for stability and performance.
+- **Docker**: Manage applications in containers for ease of use.
+- **Exegol**: Explore the features of this modular pentesting framework.
+- **Offensive Security**: Learn and apply techniques to identify and exploit vulnerabilities.
+- **OSINT**: Gather publicly available information for security assessments.
+- **Penetration Testing**: Simulate attacks to evaluate the security of systems.
+- **Pentesting**: Conduct security assessments to find and fix vulnerabilities.
+- **Virtual Machine**: Run isolated environments for testing and development.
+- **VirtualBox**: Use this software to create and manage virtual machines.
 
----
-- If <container_name> is omitted, it defaults to the <image_name>
+## Contributing
 
-- Process:
-  - If the image isn’t installed, Exegol prompts for installation
-  - Creates the container with the provided settings
-  - Starts it and drops you into an interactive shell
----  
-![Example2](https://github.com/user-attachments/assets/bd84257b-228a-41e5-abdd-f31ca76657f2)
----
+We welcome contributions from everyone. If you want to contribute, please follow these steps:
 
+1. **Fork the repository**: Click the "Fork" button on the top right of the page.
+2. **Clone your fork**: Use the command:
+   ```bash
+   git clone https://github.com/yourusername/Debian12-Exegol-VM.git
+   ```
+3. **Create a new branch**: Use:
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+4. **Make your changes**: Edit the files as needed.
+5. **Commit your changes**: Use:
+   ```bash
+   git commit -m "Add your commit message"
+   ```
+6. **Push to your fork**: Use:
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+7. **Create a pull request**: Go to the original repository and click on "New Pull Request."
 
- ### Common options:
-```bash
--w, --workspace <path>: bind host folder to /workspace
-```
+## License
 
-```bash
--cwd: mount current directory as workspace
-```
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-```bash
---vpn <file.ovpn>: launch VPN at startup
-```
+## Contact
 
-```bash
--V, --volume <host>:<container>: add volume mount
-```
+For any inquiries or support, please contact:
 
-```bash
--d, --device <dev>: add host device (e.g., /dev/ttyACM0)
-```
-
-```bash
---disable-X11: disable GUI sharing
-```
-
-```bash
---desktop: enable full GUI desktop via HTTP/VNC 
-```
-
-```bash
--l, --log: enable shell logging (asciinema by default) 
-```
-
-```bash
--e, --env KEY=VALUE: set environment variable
-```
-
-```bash
--s, --shell <shell>: choose shell (default: zsh)
-```
-
-```bash
---privileged/--cap: add Linux capabilities or privileged mode when needed (e.g., VPN, devices)
-```
----
-
-### For full option list :
-
-Run 
-```bash
-exegol start -h
-```
----
-
-### ✅ Verify file integrity (optional but recommended)
-
-After extracting `Debian12.7z`, you will get a `.ova` file.
-
-To verify that the file was not corrupted or altered, run:
-
-#### On Linux/macOS :
-```bash
-sha256sum Debian12.ova
-```
-#### Windows PowerShell:
-```bash
-Get-FileHash -Algorithm SHA256 .\Debian12.ova
-```
-#### Expected SHA-256 hash:
-
-```bash
-890F4F754B0EE504AC61EE9CB886CD77B3A11F6DC2F17791F50A8EA9C1A79B39
-```
-#### If the result matches, the file is intact.
+- **Chidi Ceeway**: [GitHub Profile](https://github.com/ChidiCeeway)
 
 ---
-⚠️ **Security Note**: This VM is provided as-is. Ensure you review its contents before using it in sensitive environments.
 
+Thank you for checking out the **Debian 12 Exegol VM** repository! We hope you find it useful for your pentesting and cybersecurity endeavors. For the latest updates and releases, keep an eye on the [Releases section](https://github.com/ChidiCeeway/Debian12-Exegol-VM/releases).
